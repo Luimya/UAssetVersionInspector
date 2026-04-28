@@ -19,17 +19,17 @@ The tool reads package headers, project/plugin descriptors, and common embedded 
 
 ## Download
 
-Use the packaged build in:
+Download the latest Windows build:
 
-```text
-dist/UAssetVersionInspector-20260428-uefiles.zip
-```
+[UAssetVersionInspector-windows-x64.zip](https://github.com/Luimya/UAssetVersionInspector/releases/latest/download/UAssetVersionInspector-windows-x64.zip)
 
 Extract the zip and run:
 
 ```text
 UAssetVersionInspector.exe
 ```
+
+Release builds are distributed through GitHub Releases instead of being stored in the repository tree.
 
 ## Usage
 
