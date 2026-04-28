@@ -53,6 +53,20 @@ The lightweight release targets Windows with .NET 9 Desktop Runtime.
 
 If the app does not start on another PC, install the .NET 9 Desktop Runtime from Microsoft.
 
+## Windows Security Notice
+
+This project is currently not code-signed. Windows may show a warning such as:
+
+```text
+The publisher could not be verified
+```
+
+or SmartScreen may identify the app as coming from an unknown publisher.
+
+This happens because the executable does not have a paid code-signing certificate. It does not mean the tool modifies your Unreal files. The app is read-only and only inspects selected files.
+
+If you trust this repository and downloaded the app from the official GitHub Releases page, you can choose to run it anyway. For public production distribution, the proper fix is to sign the executable with an OV or EV code-signing certificate.
+
 ## 中文说明
 
 UAsset Version Inspector 是一个 Windows 桌面工具，用于检查常见 Unreal Engine 项目文件和资源包文件。
@@ -88,6 +102,20 @@ UAsset Version Inspector 是一个 Windows 桌面工具，用于检查常见 Unr
 
 轻量版需要目标电脑安装 .NET 9 Desktop Runtime。
 
+### Windows 安全提示
+
+当前版本没有进行代码签名，因此 Windows 可能会提示：
+
+```text
+无法验证发布者
+```
+
+或被 SmartScreen 标记为未知发布者。
+
+这是因为程序没有使用付费代码签名证书，并不代表工具会修改你的 Unreal 文件。本工具是只读工具，只会检查你选择的文件。
+
+如果你信任此仓库，并且是从官方 GitHub Releases 页面下载，可以选择继续运行。若要正式公开分发，正确做法是购买 OV 或 EV 代码签名证书，并对 exe 进行签名。
+
 ## 日本語説明
 
 UAsset Version Inspector は、Unreal Engine の一般的なプロジェクトファイルやパッケージファイルを調べるための Windows デスクトップツールです。
@@ -122,6 +150,20 @@ UAsset Version Inspector は、Unreal Engine の一般的なプロジェクト�
 このツールは読み取り専用です。Unreal のアセットを変更しません。
 
 軽量版を使用するには、対象 PC に .NET 9 Desktop Runtime が必要です。
+
+### Windows セキュリティ通知
+
+現在のバージョンはコード署名されていません。そのため、Windows で次のような警告が表示される場合があります。
+
+```text
+発行元を確認できません
+```
+
+または SmartScreen によって不明な発行元として表示される場合があります。
+
+これは、有料のコード署名証明書で exe に署名していないためです。このツールが Unreal ファイルを変更するという意味ではありません。本ツールは読み取り専用で、選択したファイルを検査するだけです。
+
+このリポジトリを信頼し、公式の GitHub Releases ページからダウンロードした場合は、そのまま実行できます。正式に公開配布する場合は、OV または EV コード署名証明書で exe に署名するのが適切な対応です。
 
 ## Batch Report Mode
 
