@@ -39,7 +39,7 @@ internal sealed class MainForm : Form
     public MainForm(string[] args)
     {
         Text = "UAsset Version Inspector";
-        var iconPath = Path.Combine(AppContext.BaseDirectory, "Assets", "app.ico");
+        var iconPath = Path.Combine(AppContext.BaseDirectory, "app.ico");
         if (File.Exists(iconPath))
             Icon = new Icon(iconPath);
         Width = 1040;
