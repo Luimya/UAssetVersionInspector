@@ -71,6 +71,16 @@ UAsset Version Inspector 是一个 Windows 桌面工具，用于检查常见 Unr
 
 它主要用于判断从网络下载的 UE 文件最初是由哪个 Unreal Engine 版本制作或保存的。
 
+下载最新版轻量 Windows 构建：
+
+[UAssetVersionInspector-windows-x64.zip](https://github.com/Luimya/UAssetVersionInspector/releases/latest/download/UAssetVersionInspector-windows-x64.zip)
+
+解压后运行：
+
+```text
+UAssetVersionInspector.exe
+```
+
 可检查的信息包括：
 
 - 资源保存时使用的 Unreal Engine 版本
@@ -117,6 +127,16 @@ UAsset Version Inspector 是一个 Windows 桌面工具，用于检查常见 Unr
 UAsset Version Inspector は、Unreal Engine の一般的なプロジェクトファイルやパッケージファイルを調べるための Windows デスクトップツールです。
 
 インターネットから入手した UE ファイルが、元々どの Unreal Engine バージョンで作成または保存されたものかを確認する用途を想定しています。
+
+最新版の軽量 Windows ビルドをダウンロード：
+
+[UAssetVersionInspector-windows-x64.zip](https://github.com/Luimya/UAssetVersionInspector/releases/latest/download/UAssetVersionInspector-windows-x64.zip)
+
+zip を展開して実行：
+
+```text
+UAssetVersionInspector.exe
+```
 
 確認できる情報：
 
