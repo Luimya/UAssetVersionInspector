@@ -18,6 +18,8 @@ UAssetVersionInspector.exe
 
 Release builds are distributed through GitHub Releases instead of being stored in the repository tree.
 
+The release zip keeps the top-level folder clean: the launcher `UAssetVersionInspector.exe` is in the root, program files are stored in the `Data` folder, and exported reports default to the `Save` folder.
+
 ## Features
 
 - Saved Unreal Engine version
@@ -110,6 +112,8 @@ UAssetVersionInspector.exe
 
 轻量版需要目标电脑安装 .NET 9 Desktop Runtime。
 
+发布压缩包的根目录只保留启动入口 `UAssetVersionInspector.exe`，程序文件和依赖统一放在 `Data` 文件夹中，报告导出默认使用 `Save` 文件夹。
+
 ### Windows 安全提示
 
 当前版本没有进行代码签名，因此 Windows 可能会提示：
@@ -166,6 +170,8 @@ UAssetVersionInspector.exe
 このツールは読み取り専用です。Unreal のアセットを変更しません。
 
 軽量版を使用するには、対象 PC に .NET 9 Desktop Runtime が必要です。
+
+リリース zip のルートには起動用の `UAssetVersionInspector.exe` だけを置き、プログラム本体と依存ファイルは `Data` フォルダーにまとめています。レポートのエクスポート先は既定で `Save` フォルダーになります。
 
 ### Windows セキュリティ通知
 

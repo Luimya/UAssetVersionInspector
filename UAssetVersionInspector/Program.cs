@@ -177,15 +177,27 @@ internal sealed class MainForm : Form
             return;
 
         var t = T;
+        var saveDir = GetDefaultSaveDirectory();
+        Directory.CreateDirectory(saveDir);
         using var dialog = new SaveFileDialog
         {
             Filter = "Text report (*.txt)|*.txt|All files (*.*)|*.*",
             FileName = $"uasset-report-{DateTime.Now:yyyyMMdd-HHmmss}.txt",
+            InitialDirectory = saveDir,
             Title = t.SaveDialogTitle
         };
 
         if (dialog.ShowDialog(this) == DialogResult.OK)
             File.WriteAllText(dialog.FileName, _output.Text, Encoding.UTF8);
+    }
+
+    private static string GetDefaultSaveDirectory()
+    {
+        var baseDir = AppContext.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+        var rootDir = string.Equals(Path.GetFileName(baseDir), "Data", StringComparison.OrdinalIgnoreCase)
+            ? Path.GetDirectoryName(baseDir) ?? baseDir
+            : baseDir;
+        return Path.Combine(rootDir, "Save");
     }
 
     private void AnalyzeFiles(IEnumerable<string> paths)
