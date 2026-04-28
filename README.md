@@ -179,6 +179,9 @@ UAssetVersionInspector.exe
 
 これは、有料のコード署名証明書で exe に署名していないためです。このツールが Unreal ファイルを変更するという意味ではありません。本ツールは読み取り専用で、選択したファイルを検査するだけです。
 
+<details>
+<summary>Developer and batch usage</summary>
+
 ## Batch Report Mode
 
 ```powershell
@@ -196,3 +199,5 @@ Framework-dependent publish:
 ```powershell
 dotnet publish .\UAssetVersionInspector\UAssetVersionInspector.csproj -c Release --self-contained false -o .\dist\UAssetVersionInspector
 ```
+
+</details>
